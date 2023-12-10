@@ -24,6 +24,7 @@ html {
 }
 .title-logo-container {
     width: 100%;
+    height: auto;
     flex: 1;
     display: flex;
     justify-content: space-around;
@@ -46,8 +47,13 @@ html {
     height: 100%;
     width: 100%;
     list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 .nav-list-item a {
+    margin: auto 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,19 +61,25 @@ html {
     text-align: center;
     text-decoration: none;
     color:rgb(16, 78, 16);  
-    height: 100%;
-    width: 100%;
+    height: 70%;
+    width: 70%;
+    border: 2px solid #39e83999;
+    text-align:center ;
+    padding: 1px;
+    border-radius: 5px;
+    color:rgb(16, 78, 16);
     
 }
-.nav-list-item:hover {
+.nav-list-item as:hover {
     background-color: rgb(191, 246, 212);
 }
 .page-title {
+    box-sizing: border-box;
     width: 40%;
-    border: 1.5px solid #39e83999;
-    box-shadow: 0 0 0 3px #fff, 0 0 0 5px #007e00ba;
+    border: 2px solid #39e83999;
+    box-shadow: 0 0 0 3px #fff, 0 0 0 5px #007e00, 0 0 0 8px #fff, 0 0 0 10px black;
     text-align:center ;
-    padding: 10px;
+    padding: 1px;
     border-radius: 5px;
     color:rgb(16, 78, 16);
 
@@ -90,4 +102,56 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+.top-articles {
+    height: 100%;
+    width: 100%;
+    border: 4px solid black;
+    background-color: #9dff9d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.left-article-containers {
+    padding-top:5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.left-article-containers > div {
+    width:40%;
+    text-align: left;
+    line-height: 1.4rem;
+}
+.article-img-con {
+    width: 40%;
+    height: auto;
+}
+.article-img-con > img {
+    width: 100%;
+    margin: auto;
+}
+.secondary-article {
+    display: flex; 
+}
+.second-img-con {
+    width: 40%;
+    height: auto;
+    align-items: center;
+}
+.second-img-con > img {
+    width:  100%;
+}
+.secondary-article {
+    padding-top:5%;
+    display: flex;
+    justify-content: space-around;
+}
+.secondary-article > div {
+    width:40%;
+    text-align: left;
+    line-height: 1.4rem;
+}
+.right-article-para {
+
 }
